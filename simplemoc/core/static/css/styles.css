@@ -20,7 +20,8 @@ body {
 .header .pure-menu li a:focus {
     background: none;
     border: none;
-    color: #aaa;
+    /* color: #aaa; */
+    color: #02a6eb;
 }
 body .primary-button {
     background: #02a6eb;
@@ -67,7 +68,8 @@ body .primary-button {
     font-weight: normal;
 }
 .footer {
-    background: #111;
+    /* background: #111; */
+    background: rgb(1, 36, 15);
     color: #666;
     text-align: center;
     padding: 1em;

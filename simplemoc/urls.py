@@ -15,8 +15,10 @@ Including another URLconf
 """
 from django.conf.urls import url, include
 from django.contrib import admin
+import simplemoc.core.views
 
 urlpatterns = [
-    url(r'^$', include('simplemoc.core.urls', namespace='core')),
-    url(r'^admin/$', admin.site.urls),
+    url(r'^', include('simplemoc.core.urls', namespace='core')),
+    # url(r'^', simplemoc.core.urls),
+    url(r'^admin/', admin.site.urls),
 ]

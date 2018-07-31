@@ -1,6 +1,6 @@
-from django.conf.urls import url, include, patterns
+from django.conf.urls import url, include
 
-urlpatterns = patterns ('simplemoc.core.views',
-    url(r'^$', 'home', name='home'),
-    url(r'^contato/$', 'contact', name='contact'),
-) 
+urlpatterns = [
+    url(r'^$', 'simplemoc.core.views.home', name='home'),
+    url(r'^contato/$', 'simplemoc.core.views.contact', name='contact'),
+]
